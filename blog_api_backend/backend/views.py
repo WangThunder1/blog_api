@@ -158,9 +158,9 @@ def user_utils(request:Request, pk: int) -> None:
         case 'GET':
             return get_single_user(request, pk)
         case 'PUT':
-            return put_single_blogpost(request, pk)
+            return put_single_user(request, pk)
         case 'DELETE':
-            return delete_single_blogpost(request, pk)
+            return delete_single_user(request, pk)
         case _ :
             print('mmmmmm whoops something didnt go right')
 ###############################################################################################################
