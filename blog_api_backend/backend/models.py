@@ -36,7 +36,7 @@ class Post(models.Model):
         on_delete=models.SET_NULL,
         null=True,
         blank=True,
-        related_name="authors",
+        related_name="posts",
     )
     post_content:models.CharField = models.CharField(max_length=20000)
 
